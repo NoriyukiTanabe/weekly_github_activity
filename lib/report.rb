@@ -33,7 +33,6 @@ class Report
       time = e.created_at.getlocal.to_date
 
       if time < Date.current.beginning_of_week
-        puts "#{time} < #{Date.current.beginning_of_week}"
         break
       end
 
@@ -45,7 +44,7 @@ class Report
       when "PullRequestEvent"
         pulls[e.payload.pull_request.number] = {title: e.payload.pull_request.title, date: time}
       else
-        puts "Unknown Event #{e.type}"
+        # puts "Unknown Event #{e.type}"
       end
     end
 
