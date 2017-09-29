@@ -7,6 +7,7 @@
 ### auto send message to slack
 
 ```
+$ bundle install
 $ cp .env.sample .env
 $ vi .env
 # edit github auth info & add slack api url
@@ -18,6 +19,7 @@ $ whenever --update-crontab
 ### manual
 
 ```
+$ bundle install
 $ rake report
 user: <input username>
 password: <input password>
