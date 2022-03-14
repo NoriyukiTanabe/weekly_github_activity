@@ -18,7 +18,7 @@ $ whenever --update-crontab
 
 ### manual
 
-```
+```bash
 $ bundle install
 $ rake report
 user: <input username>
