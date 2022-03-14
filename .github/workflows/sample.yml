@@ -1,0 +1,16 @@
+name: Sample
+
+on:
+  issue_comment:
+    types: created
+
+jobs:
+  asana_status_check:
+    if: startsWith(github.event.comment.body, '/sample')
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+    - name: Run command
+      env:
+        NUMBER: ${{ github.event.issue.number }}
+      run: echo "$NUMBER"
