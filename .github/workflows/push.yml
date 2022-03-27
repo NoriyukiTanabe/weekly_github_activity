@@ -1,0 +1,14 @@
+name: Action push
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Target branch'
+        required: true
+
+jobs:
+  action_push_job:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo "inputs: ${{ github.event.inputs.branch }}"
