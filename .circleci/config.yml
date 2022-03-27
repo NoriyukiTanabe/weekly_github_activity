@@ -1,0 +1,14 @@
+version: 2.1
+
+commands:
+  sample_command:
+    steps:
+      - run:
+        name: Sample run
+        command: |
+          echo "ABC"
+
+jobs:
+  build:
+    steps:
+      - sample_command
