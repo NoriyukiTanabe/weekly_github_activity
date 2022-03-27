@@ -1,14 +1,21 @@
 version: 2.1
 
+executors:
+  base:
+    docker:
+      - image: cimg/ruby:2.7.4
+
 commands:
   sample_command:
     steps:
       - run:
-        name: Sample run
-        command: |
-          echo "ABC"
+          name: Sample run
+          command: |
+            echo "ABC"
 
 jobs:
   build:
+    executor: base
     steps:
       - sample_command
+
