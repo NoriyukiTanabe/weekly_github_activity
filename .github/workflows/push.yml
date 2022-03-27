@@ -12,3 +12,4 @@ jobs:
     steps:
     - run: |
         echo "inputs: ${{ github.event.inputs.branch }}"
+        git branch
