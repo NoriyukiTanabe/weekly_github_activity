@@ -6,7 +6,7 @@
 
 ### auto send message to slack
 
-```
+```bash
 $ bundle install
 $ cp .env.sample .env
 $ vi .env
