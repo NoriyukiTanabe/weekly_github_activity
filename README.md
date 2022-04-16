@@ -30,3 +30,5 @@ password: <input password>
 ## LIMIT
 
 月曜からコマンド実行時までのアクティビティ数が300件を超えると正しく動作しない可能性があります
+
+added line
